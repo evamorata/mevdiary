@@ -1,0 +1,133 @@
+/* CSS OF ADVENTURE 3 */
+/* FONT AND BACKGROUND */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom,#170f1c,#291632,#542352);
+}
+body::-webkit-scrollbar {
+    display: none; /* Ocultar la barra de desplazamiento en WebKit (Chrome, Safari, Edge) */
+}
+/* STARS IN THE BACKGROUND */
+.stars {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Asegura que las estrellas estén detrás del contenido */
+}
+.star {
+    position: absolute;
+    background-color: #ffffff;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%; /* Hace que los puntos parezcan estrellas */
+}
+/* HEADER */
+.header {
+    background-color: #292929; /* color de fondo de la cabecera */
+    height: auto; /* altura de la cabecera */
+    padding: auto; /* espacio interno */
+    box-sizing: border-box;
+}
+/* LOGO */
+.logo img {
+    width: 55px;
+    height: 55px;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+/* TOP MARGIN */
+#main-container {
+    margin-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 160px; /* Margen izquierdo */
+    margin-right: 160px; /* Margen derecho */
+}
+/* LINE */
+.linea {
+    border: none; /* Elimina el borde predeterminado del elemento hr */
+    border-top: 1px solid #ffffff; /* Define el borde superior de la línea */
+    margin: 20px 0; /* Establece un margen superior e inferior para separar los párrafos */
+}
+/* TITLE */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 70px;
+}
+/* ALL TEXT */
+p {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: justify;
+}
+/* SUBTITLE LEFT */
+#subtitle1 {
+    font-size: 50px;
+    text-align: right;
+}
+/* SUBTITLE RIGHT */
+#subtitle2 {
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+/* TEXTS */
+#text1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contenedor {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos hijos */
+}
+.foto {
+    margin-right: 20px; /* Espacio entre la foto y el contenido */
+}
+.contenido-centrado {
+    display: flex; /* Utiliza flexbox para centrar verticalmente el contenido */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+/* IMAGES */
+#image1 {
+    width: 400px;
+    height: 400px;
+    float: right; /* Alineamos la imagen a la izquierda */
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+/* FOR MOBILE PHONES, TABLETS... */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 30px; /* Añadimos un padding al body para dispositivos móviles */
+    }
+    #main-container {
+        margin-top: 20px; /* Reducimos el margen superior */
+        padding-bottom: 100px; /* Reducimos el padding inferior */
+        margin-left: 20px; /* Reducimos el margen izquierdo */
+        margin-right: 20px; /* Reducimos el margen derecho */
+    }
+    h1 {
+        font-size: 45px; /* Reducimos el tamaño del título para dispositivos móviles */
+    }
+    p {
+        font-size: 20px; /* Reducimos el tamaño del texto para dispositivos móviles */
+    }
+    #subtitle1, #subtitle2 {
+        font-size: 30px; /* Reducimos el tamaño de los subtítulos para dispositivos móviles */
+    }
+    #image1 {
+        width: 100%; /* Aseguramos que la imagen se ajuste al ancho del contenedor */
+        height: auto; /* Permitimos que la altura se ajuste automáticamente */
+        margin-right: 0; /* Eliminamos el margen derecho */
+        margin-bottom: 20px; /* Añadimos un margen inferior */
+    }
+}
